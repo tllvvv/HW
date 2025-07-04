@@ -1,3 +1,5 @@
+.PHONY: all clean
+
 CC = gcc
 CFLAGS = -g -O0
 #CFLAGS = -O3
@@ -10,7 +12,5 @@ all: $(SOURCES) $(EXECUTABLE)
 $(EXECUTABLE): $(OBJECTS) 
 	$(CC) $(OBJECTS) -o $@
 
-.cpp.o:
-	$(CC) $(CFLAGS) $< -o $@
 clean:
 	rm -rf *.o program

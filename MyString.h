@@ -20,9 +20,6 @@ typedef struct correctPos{
      pair *array_pos;   
 }correctPos;
 
-static pair number_of_borders(const string_t *string, char separator);
-static int* border_position(const string_t *string, char separator, const pair *cnt_border);
-
 string_t concatenation(string_t *first_string, string_t *second_string);
 string_t substring(string_t *input_string, int first_position, int second_position);
 string_t* my_split(string_t *string, char separator, int *size);
